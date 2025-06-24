@@ -1,0 +1,11 @@
+plum-dispatch==2.5.7
+fasttransform
+fastai
+
+# Tooling
+pytest
+pytest-benchmark
+perfplot
+viztracer
+graphviz
+jupyterlab
