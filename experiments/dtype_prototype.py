@@ -3,7 +3,7 @@
 import torch
 from plum import dispatch
 
-print(f"--- DType-Aware Dispatch Prototype (v12 - THE NO-MAGIC SOLUTION) ---")
+print(f"--- DType-Aware Dispatch Prototype ---")
 
 # ===================================================================
 # 1. THE FINAL STRATEGY: A Registry, No Patching.
