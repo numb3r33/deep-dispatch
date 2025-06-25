@@ -131,7 +131,8 @@ def run_nbdev_suite(label: str, use_plum_patch: bool, n_workers: int = 0):
     passed = False
     try:
         with chdir("../fastai"):
-            passed = nbtest.nbdev_test(path="/Users/abhisheksharma/Desktop/src/github/fastai/nbs/08_vision.data.ipynb", n_workers=n_workers)
+            from pathlib import Path
+            passed = nbtest.test_nb(fn=Path("/Users/abhisheksharma/Desktop/src/github/fastai/nbs/05_data.transforms.ipynb"))
     except SystemExit as ex:  # nbdev_test may call sys.exit(1) on failure
         passed = ex.code == 0
     except Exception:

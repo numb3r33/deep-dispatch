@@ -54,4 +54,4 @@ finally:
 print("\n--- 4. Calling after restoration to confirm it's back to normal ---")
 my_func(1)
 
-print("\n✅ Patching and restoration complete.")
+print("\nPatching and restoration complete.")
